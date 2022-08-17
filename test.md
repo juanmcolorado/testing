@@ -1,6 +1,10 @@
 Q1. If you are going to configure Mysql JDBC Database as Secondary User store Where should you place mysql driver?
     A) <IS-HOME>/repository/components/parches/patch<4_digit_number>
-    B) <IS-HOME>/repository/components/lib
+
+        correcto B) <IS-HOME>/repository/components/lib
+        
+        https://is.docs.wso2.com/en/6.0.0/deploy/change-to-mysql/#:~:text=Download%20the%20MySQL%20JDBC%20driver%20for%20the%20version%20you%20are%20using%20and%20copy%20it%20to%20the%20%3CIS_HOME%3E/repository/components/lib%20folder
+
     C) <IS-HOME>/repository/components/dropins
     D) <IS-HOME>/repository/components/plugins
 Q2. What is a possible method to encrypt and decrypt user claim attributes when storing and retrieving in WSO2 Identity Server?
@@ -265,7 +269,9 @@ Q50.  Which of the following is mandatory to include inside the <Result> element
     B) <Attributes>
     C) <Decision>
     D) <Status>
-  
+
+*************************************************************************************************************************
+
 1. A privileged user is someone who:
    a) Follows up on the latest and greatest technology.
    b) C-Level management.
