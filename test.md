@@ -773,3 +773,413 @@ Q50: What is the extension that needs to be written to evalute a XACML policy fr
     B) Implement a custiom PEP
     C) Implement a custom PDP
     D) Implement a custom PIP
+
+
+*****************************************************************************************************************
+
+Q1. Which action is NOT enabled by having the permission SuperAdminPermission/Manage?
+a)	Modify Tenants 
+b)	Delete Tenants 
+c)	View Tenants 
+d)	Create Tenants
+Q2. What is a possible method to encrypt and decrypt user claim attributes when storing and retrieving in WSO2 Identity Server?
+a)	Write a custom password validator. 
+b)	Write a custom authenticator.
+c)	Write a post authentication handler. 
+d)	Write a custom event listener overriding POST and PRE operations of userstore.
+Q3. MedLife is a legacy system that has lot of user information. They need to migrate the users during their first authentication to the new system from the existing system. The user Password is hashed in the old userstore. What is the ideal way to achieve this requirement?
+a)	Bulk user import. 
+b)	Write a custom authenticator to authenticate and migrate in the first step.
+c)	Federate the user to the old system and then do JIT provisioning. 
+d)	None of the above
+Q4: When you create a new user what is the character NOT allowed for the username in the Identity server by default?
+a)	Dash (i.e. "-") 
+b)	Underscore (i.e. "_")
+c)	Forward slash (i.e. "/") 
+d)	Dot (i.e.".")
+Q5: Which of the following statements about the self user registration feature is INCORRECT?
+a)	WSO2 Identity Server supports REST APIs for self user registration.
+b)	The self registration feature can be enabled user store-wise. 
+c)	The self registration feature can be enabled tenant-wise. 
+d)	The internal / selfsignup role is assigned to the self-registered users by default.
+Q6: Which statement about identity claims in WSO2 Identity Server is FALSE?
+a)	ldentity claims describe the status of the identity server. 
+b)	ldentity claims describe the status of identity applications 
+c)	ldentity claims can be configured to be stored in the user store or identity database. 
+d)	ldentity claims can only be persisted in the user store
+Q7: Which of the following statements about the password history feature in WSO2 Identity Server is INCORRECT?
+a)	The password history feature is enforced when adding a user. 
+b)	The password history feature is enforced when updating the credentials of a user. 
+c)	The password history feature can be enabled tenant-wise. 
+d)	The password history feature is not enforced for privileged users.
+Q8: Which of the following methods of forced password reset are used in WSO2 Identity Server?
+a)	Password Reset via Recovery Email and OTP 
+b)	Password Reset Recovery Email and OTP and Offline 
+c)	Password Reset via OTP only 
+d)	Password Reset via Recovery Email only
+Q9: Which of the following statements about the idle account suspension feature is INCORRECT?
+a)	Users can be notified before the account gets locked. 
+b)	This feature is used to lock user accounts which have not been active for a long time (e.g., inactive for the last 3 months) 
+c)	The feature can be enabled tenant-wise.
+d)	User accounts will be deleted if the accounts remain locked for a long time.
+Q10: After you register an OAuth application, what is the simplest way to create a new client secret?
+a)	Create a new application with the same application name 
+b)	Use the revoke feature 
+c)	Use the "Regenerate Secret" feature 
+d)	Delete the current application and create a new application
+Q11: What is the Callback URL?
+a)	This is an endpoint in the client application.
+b)	This is the exact location in the client application in which the access token is sent. 
+c)	This is the landing page of the client application user's first access.
+d)	This is the homepage of the client application which initiates the authentication request.
+Q12: Arrange the following OAuth tokens in the Lifetime of increasing order
+1.  Authorization code
+2. Access token
+3. Refresh token 
+a)	3, 1 and 2
+b)	1, 3 and 2
+c)	3, 2 and 1
+d)	1, 2 and 3
+Q13: What is the real-world example that can be used to describe an OAuth 2.0 token?
+a)	The main key to your car
+b)	Valet key of your car
+c)	ATM card PIN number
+d)	None of the above
+Q14: How does the resource server validate the access token?
+a)	A. Resource server should send an authorization request to the authorization server with the client key 
+b)	B. Resource server should send an authorization request to the authorization server with the access token 
+c)	C. Resource server should send an introspection request to the authorization server with the access token 
+d)	Both B and C are correct answers
+Q15: Which of the following roles is a UMA 2.0 role?
+a)	Resource Owner 
+b)	Authorization Server 
+c)	Requesting Party
+d)	All of the above
+Q16: Which of the following best describes the "resource owner"?
+a)	A user who owns the resource. 
+b)	An application that represents the user who owns the resource 
+c)	The server that hosts the resources. 
+d)	A and B.
+Q17: Which of the following steps are a part of setting up UMA 2.0?
+a)	Configure a new local claim 
+b)	Configure a policy to protect the resource 
+c)	Configure an adaptive authentication script to protect the resource 
+d)	None of the above
+Q18: Which of the following can be done via UMA 2.0?
+a)	Block the user login based on the user role
+b)	Configure account recovery mechanisms 
+c)	Get the suspicious login alerts of the users 
+d)	Provide access to your resources for multiple users
+Q19: Which of the following actions needs to be done at first to enable UMA 2.0?
+a)	Send a request to the administrator 
+b)	Registering the resource
+c)	Give a call to the requesting party 
+d)	Configuring policies
+Q20: In the id_token, which is the claim that denotes to whom the token is intended for?
+a)	lnt 
+b)	usr 
+c)	iat 
+d)	aud
+Q21: In the id_token what does the iat claim denote?
+a)	The user identifier. 
+b)	The intended audience of the token. 
+c)	The issuer of the id_token. 
+d)	The issued time of the token.
+Q22: Which OAuth scope is used to engage the OIDC protocol?
+a)	openid 
+b)	oidc 
+c)	id_token 
+d)	no special scope is required
+Q23: What is NOT a part of an id_token?
+a)	signature 
+b)	footer 
+c)	header 
+d)	payload
+Q24: Which claim of the id_token helps the application to identify the authenticated end user?
+a)	auth_user 
+b)	Aud 
+c)	sub 
+d)	usr
+Q25: What is TRUE about the <Issuer element in the SAML assertion?
+a)	There can be multiple elements for an assertion. 
+b)	At least one element must be present in an assertion. 
+c)	This contains the unique identifier of the service provider.
+d)	This contains the unique identifier of the identity provider.
+Q26: How does the SAML IdP identify the web SSO session participants?
+a)	Using a cookie attached to the IdP domain. 
+b)	Using a common <SessionIndex> value shared among the session participants. 
+c)	Using a cookie attached to the SP domains. 
+d)	Using two hidden iframes, one at the SP and other at the IdP.
+Q27: What is TRUE about the validity period of the SAML assertion issued by WSO2 IS?
+a)	Admin users can update the assertion validity period under resident identity provider configuration. 
+b)	ln the default configuration, an assertion is valid for 3600 seconds. 
+c)	ldP and SP need to be in the same time zone to validate the assertion validity period. 
+d)	ln the default configuration, an assertion is valid for 300 seconds.
+Q28: What is the CORRECT statement about how SAML 2.0 messages are exchanged?
+a)	They cannot be exchanged via HTTP POST 
+b)	Can be embedded with SOAP messages. 
+c)	Embedding with SOAP messages is no longer supported. 
+d)	Exchanging via HTTP redirect is the only supported method.
+Q29: Which of the following SAML 2.0 specifications describe how SAML Assertions are exchanged via existing protocols?
+a)	SAML 2.0 Metadata 
+b)	SAML 2.0 Core 
+c)	SAML 2.0 Bindings 
+d)	SAML 2.0 Profiles
+Q30: Organization XYZ consumes two applications, an HR application and an accounts application. To improve the end user experience, the organization does not
+need to prompt a login page for the user when they log in to the HR application if there is already a valid session of the same user from an initial login to the accounts application. Which of the following is the best model for this organization?
+a)	Combine both the applications and develop a single application system.
+b)	Applications having their own user base 
+c)	An identity provider system which is connected to the organization's userstore. 
+d)	Applications having a common user base
+Q31: Select an open standard which is used for seamless integration between applications and identity providers.
+a)	Federation 
+b)	Work Flows 
+c)	Active Directory 
+d)	OpenID Connect
+Q32: Which of the following is NOT an advantalie of using an open standard for SSO?
+a)	Reduces complexity in integrating new applications with an identity provider 
+b)	Applications implementing proprietary communication protocols can be easily integrated with an identity provider 
+c)	Pre-defined message formats between the identity provider and service provider communications 
+d)	Minimizes development overhead
+Q33: What is NOT a parameter which provides Authentication Context Reference value in WSO2 Identity Server in different scenarios?
+a)	samlp:AuthnContextClassRef 
+b)	acr_values 
+c)	Request Context 
+d)	context.requestedAcr
+
+Q34: Which statement is TRUE about configuring identity providers to perform identity federation in WSO2 Identity Server?
+A. Any SAML supporting IdP can be configured as a federated IDP 
+B. Any SCIM supporting IdP can be configured as a federated lap 
+C. Any OpenID Connect supported IdP can be configured as a federated IdP
+a)	A, B and C 
+b)	A and C only 
+c)	C only 
+d)	B only
+Q35: What are the benefits of identity federation?
+A. Ability to enable MFA without requiring changes to service providers 
+B. Ability to share user credentials between identity providers and service providers 
+C. Ability to introduce social identity providers applications with minimum effort
+a)	A, C only 
+b)	A, B only 
+c)	A, B and C 
+d)	B, C only
+Q36: Which of the following statements are TRUE regarding identity federation?
+A. It enables obtaining regulatory compliance with minimum effort
+B. It enables adopting to latest security trends with minimum effort
+C. It enables onboarding applications adhering to complex access control policies
+a)	A, B and C 
+b)	B and Conly 
+c)	A and B only 
+d)	A and C only
+Q37: Which of the following protocols supported by WSO2 Identity Server CANNOT be used for Identity Federation?
+A. SAML
+B. XACML
+C. WS-Federation (Passive)
+a)	B only 
+b)	B and C only 
+c)	A only 
+d)	A and C only
+Q38: The most commonly used combination of username and password is an example for,
+a)	Multi-Factor Authentication 
+b)	Single-Factor Authentication 
+c)	TWO-Factor Authentication 
+d)	Any of the above
+Q39: Which statement is FALSE about two-factor authentication in WSO2 Identity Server?
+a)	WSO2 Identity Server supports FIDO as the second factor in two-factor authentication. 
+b)	We can implement a second factor for authentication using a custom authenticator.
+c)	Two-factor authentication is supported in WSO2 Identity Server using XMPP. 
+d)	Two-factor authentication can be supported by WSO2 Identity Server by configuring multiple authentication steps.
+Q40: Which form of authentication is the easiest to deploy but the most vulnerable?
+a)	Biometrics 
+b)	Security token 
+c)	Passwords 
+d)	Smart Cards
+Q41: Company A needs to authenticate their users to a mobile app through their username and password and register his/her device via an SMS OTP. What is NOT a possible
+method to achieve this requirement with WSO2 Identity Server?
+a)	Writing a custom authenticator. 
+b)	Writing a custom endpoint. 
+c)	Do some API orchestration via adaptive authentication script. 
+d)	Writing a custom userstore.
+Q42: What is the CORRECT statement about adaptive authentication?
+a)	lt's the same as multi factor authentication
+b)	lt's just a marketing term for the traditional authentication
+c)	lt enforces to use a knowledge factor 
+d)	lt gives an extra level of security
+Q43: Which scenario explains LOA (Level of Assurance) based adaptive authentication accurately?
+a)	When login to an enterprise application user A with a higher permission level will get a single factor to authenticate while a user with lower permission level will get multiple factors 
+b)	When a user tries to login to two different applications the system prompts the same type of authentication mechanism to prove the user's identity. 
+c)	When a user inquiries about the account balance from a banking application it prompts a single factor to authenticate, but when doing a money transaction it prompts multiple factors to prove identity 
+d)	None of the above explains LOA properly
+Q44: Which of the following statements about JIT provisioning is INCORRECT?
+a)	JIT provisioned accounts cannot have a password. 
+b)	JIT provisioning is used to create users in a local userstore using the data extracted from a federated IdP within the federated authentication flow. 
+c)	User accounts can be created in the external systems using JIT provisioning. 
+d)	JIT provisioning is creating users in WSO2 Identity Server by calling SCIM API endpoints.
+Q45: Choose the option with the CORRECT order of steps for user provisioning in the identity life cycle
+a)	Authorization, Provisioning, Permissions, Self-Service, De-Provisioning 
+b)	Provisioning, Authorization, Permissions, Self-Service, De-Provisioning 
+c)	Provisioning, Self-Service, Authorization, Permissions, De-Provisioning 
+d)	Authorization, Permissions, Provisioning, Self-Service, De-Provisioning
+Q46: What is the outbound provisioning mechanism supported by WSO2 Identity Server?
+a)	Role-based provisioning 
+b)	Rule-based provisioning 
+c)	Both A&B 
+d)	None of the above
+Q47: Which of the following is NOT a provisioning mechanism available in WSO2 Identity Server?
+a)	SCIM 2.0 API 
+b)	Federated authenticators 
+c)	Administrative Portal 
+d)	Self-Registration
+Q48: Which of the following is NOT a benefit of using user provisioning?
+a)	Seamless integration 
+b)	lmproved security 
+c)	Saves time and money 
+d)	None of the above
+Q49: What is XACML used for?
+a)	Creating accounts (Account Creation Meta Language)
+b)	Describing access control policies and how to interpret them 
+c)	Enforcing permissions for resources 
+d)	Encrypting authorization information
+Q50: The minimum elements that a XACML policy should comprise of are:
+a)	target, a rule-combining algorithm-identifier, and a set of rules 
+b)	target, a rule-combining algorith-identifier, a set of rules, obligation expressions, and/or advice expressions 
+c)	target, a set of rules, and obligation expressions 
+d)	target, a set of rules and advice expressions
+
+
+Exam 2
+Q1: What is a possible method of bulk user update in WSO2 Identity Server?
+a)	Through SCIM2 Bulk user Rest API 
+b)	Through WSO2 Identity Server console app 
+c)	Through bulk CSV upload 
+d)	Through a patch SCIM2/Users Patch operation
+Q5: Which of the following statements about the Password Recovery feature in WSO2 Identity Server is CORRECT?
+a)	The REST API-based password recovery feature can be enabled tenant-wise. 
+b)	Email templates for password recovery cannot be configured tenant-wise. 
+c)	The confirmation codes are stored in the registry during the REST API-based password recovery flows. 
+d)	The REST API-based password recovery feature can be enabled user store-wise.
+Q7: Which of the following statements is TRUE about the password pattern configuration in WSO2 Identity Server?
+a)	Password patterns can be configured tenant-wise only. 
+b)	Password patterns can be configured both user store-wise and tenant-wise. 
+c)	Password patterns can be configured user store-wise only. 
+d)	Privileged users can bypass the password pattern validation.
+Q9: Which of the following statements about the ReCaptcha feature in WSO2 identity Server is INCORRECT?
+a)	Recaptcha can be configured to show up on the SSO (login) page. 
+b)	Recaptcha can be configured to show up on the tenant creation page. 
+c)	Recaptcha can be configured to show up on the self user registration page. 
+d)	Recaptcha can be configured to show up on the password recovery page.
+Q12: What is the special parameter defined in the specification which can be used to limit the authorization grant?
+a)	permission 
+b)	scope 
+c)	acr 
+d)	grant_limit
+Q13: What is the real-world example that can be used to describe an OAuth 2.0 access token?
+a)	ATM card PIN number 
+b)	valet key of your car
+c)	The main key to your car 
+d)	None of the above
+Q15: What makes UMA different from OAuth?
+a)	UMA is an extension of the OAuth protocol so there is no difference.
+b)	UMA is a newer, more advanced version of the OAuth. 
+c)	UMA can be used to give access to a different user other than the resource owner whereas OAuth cannot. 
+d)	UMA can authorize devices where OAuth can authorize only users.
+Q16: Which of the following best describes the "requesting party"?
+a)	A user who requests access to a protected resource. 
+b)	Another name for the resource server. 
+c)	The server that requests the resources. 
+d)	Another name for the authorization server.
+Q19: What is the permission ticket used lor?
+a)	lt is an access token provided from the authorization server to authorize the user. 
+b)	lt is a token used by the client application to authenticate it against the resource server. 
+c)	lt is an intermediate token given by the authorization server to represent the resource server. 
+d)	The user's username and password is encrypted in this format.
+Q21: Which claim of the id_token helps the application to identify the issuer of the id_token?
+a)	idp
+b)	sub 
+c)	iss 
+d)	aud
+Q22: What is the gap that is filled by the introduction of OIDC
+a)	lt's just another authentication standard, OAuth2 can be used instead. 
+b)	lt is used to provision users from other IDPs. 
+c)	lt was introduced to communicate identity claims to the client application (i.e., the relying party). 
+d)	None of the above.
+Q23: What are scopes used for in OIDC?
+a)	TO request for user claims 
+b)	To denote permissions to APIs
+c)	Both of the above 
+d)	None of the above
+Q24: Which grant type CANNOT be used to retrieve an id_token?
+a)	Client Credentials Grant 
+b)	Resource Owner Password Grant 
+c)	lmplicit Grant 
+d)	Authorization Code Grant
+Q25: Which statement is INCORRECT about SAML?
+a)	SAML can be used to exchange user identity information. 
+b)	SAML can be used to write scripts for validating security assertions. 
+c)	SAML can be used to enable Single Sign-on. 
+d)	SAML can be used for the authentication process.
+Q26: What is the CORRECT statement about the security aspects with SAML message exchange?
+a)	Client has to solely rely on the transport level security of the underlying transport. 
+b)	lntegrity of the authentication and logout requests cannot be verified. 
+c)	Responses can be encrypted, and integrity of the authentication/Logout requests can be verified via request signing. 
+d)	Clients can only enable response signing for integrity, and rely on the transport to encrypt the messages.
+Q27: Who are the participants of SAML web SSO profile?
+a)	User, Service Provider and Identity Provider 
+b)	User, Service Provider and Resource Server 
+c)	User, Service Provider, Resource Server and Identity Provider 
+d)	User, Resource Server and Identity Provider
+Q30: What is a centralized access management system?
+a)	Shares the common user base for all the applications. 
+b)	Allows users to sign in to one application and gain access to all the other applications sharing the same session. 
+c)	Have identities distributed across multiple environments.
+d)	Each application in the system manages its own user-base
+Q31: Which statement explains SSO accurately?
+a)	SSO is an IAM concept thahallows users to sign in to one application and gain access to all the other applications sharing the same session. 
+b)	SSO is an IAM concept which shares the same userstore to persist the user metadata. 
+c)	SSO is an IAM concept which enforces more than one authentication mechanism to prove the user's identity when logging in to an application. 
+d)	SSO is an IAM concept which prompts users to login per authentication request.
+Q32: Which of the following is NOT an advantage of using an open standard for SSO?
+a)	Minimizes development overhead 
+b)	Reduces complexity in integrating new applications with an identity provider 
+c)	Applications implementing proprietary communication protocols can be easily integrated with an identity provider 
+d)	Pre-defined message formats between the identity provider and service provider communications
+Q33: Organization ABC does not use Open Standards in their systems. The company has two applications, an HR application and an accounts application connected to an Identity Provider. The company needs to onboard a sales application too. What changes need to be done in order to onboard the application?
+a)	Change either the sales application or the identity provider application implementation to adhere with the other one. 
+b)	TO write an Open standard by the application developer and share it with the authentication request. 
+c)	lntroduce a centralized access control system replacing the identity provider. O Combine all the three applications and implement a single application.
+Q38: What is an INCORRECT statement on X509Authentication?
+a)	ln X509Authentication the CN of the certificate should be equal to the username of the user who holds the certificate 
+b)	X509Authentication is used in back channel authentications. 
+c)	X509 Authentication uses a client certificate instead of username and password. 
+d)	X509 is a standard defining format of public key certificates.
+Q41: Which one of the following is an example of using MFA.
+a)	Login to a website with username/password and then FIDO.
+b)	Withdrawing money from an ATM using the ATM card and the pin number. 
+c)	Login to a website with username/password and then EMAIL OTP 
+d)	All of the above.
+Q43: Which of the following use cases CANNOT be considered as Adaptive Authentication?
+a)	User is prompted for SMS OTP authentication after the basic authentication is successful 
+b)	User is denied to login when he is trying to login from USA, when he had already logged in from India 30 mins before
+c)	User is prompted to login with TOTP authentication if he is logging in from a device for the first time. 
+d)	User is prompted for FIDO hardware key authentication if he is logging in outside the corporate network
+Q45: WSO2 Identity Server uses SCIM APIs for provisioning. Which is the CORRECT SCIM2.0 API endpoint used in default WSO2 IS?
+a)	https://localhost:9443/scim2.0/Users 
+b)	https://localhost:9443/scim2/Users  
+c)	https://localhost:9443/scim2/User 
+d)	https://localhost:9443/scim/Users
+Q46: Consider the following scenario. You are building an online grocery delivery system. You need consumers to come and register themselves in the system in order to purchase goods. You want to enable customers to login using their Google accounts. In order to contact the customer later when delivering the purchased goods , you need to save his/her details in WSO2 Identity Server. How can you achieve this using WSO2 Identity Server?
+a)	Enable  -registration and ask users to provide the email address as the username when registering themselves. 
+b)	Configure Google as a federated identity provider in WSO2 Identity Server and enable JIT provisioning, so that sign-up with google is enabled. 
+c)	Set-up a help desk/call center to collect users email addresses and other information and create an account for him/her. 
+d)	None of the above
+048: What is inbound provisioning?
+a)	Provisioning users and groups into external applications.
+b)	Provisioning a user to an external application when the user is authenticated by a federated IdP 
+c)	Provisioning a user from an external application when the user is authenticated by a federated IdP. 
+d)	Provisioning users and groups for external applications
+Q49: Which of the following is mandatory to include inside the <Results> element?
+a)	<Obligations> 
+b)	<Attributes> 
+c)	<Status> 
+d)	<Decision>
+
